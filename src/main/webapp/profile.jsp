@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
 <h1>Your Profile</h1>
 <div>Username:</div>
 <div><%= session.getAttribute("username") %>
@@ -22,5 +23,6 @@
 <form action="logout" method="post">
     <input type="submit" value="Logout">
 </form>
+Instance number: <%= System.getenv("CF_INSTANCE_INDEX") %>
 </body>
 </html>
